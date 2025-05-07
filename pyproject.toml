@@ -1,0 +1,20 @@
+[project]
+name = "fedora-release-schedule-planner"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Antony Nyagah", email = "tony.m.nyagah@gmail.com"},
+]
+dependencies = ["fastapi[standard]>=0.115.12"]
+requires-python = "==3.13.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.8",
+]
